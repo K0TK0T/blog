@@ -180,7 +180,7 @@ vim /blog/themes/next/layout/_macro/post.swig
 
 在`<div class="post-meta">`标签内添加下面的内容
 
-```
+```html
 {% if post.top %}
     <i class="fa fa-thumb-tack"></i>
     <font color=green>置顶</font>
