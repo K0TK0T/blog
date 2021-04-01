@@ -33,8 +33,7 @@ sudo apt autoclean
 
 ```bash
 # 是不是很熟，更换国内源的时候也是在这里，当然Ubuntu有更简便的方式
-sudo vim etc/apt/sources.list
-# 删除最下面几行有typora的链接
+sudo vim etc/apt/sources.list # 删除最下面几行有typora的链接
 sudo apt update
 ```
 
