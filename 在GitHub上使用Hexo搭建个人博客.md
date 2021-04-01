@@ -66,15 +66,13 @@ npm install
 
 * 设置_config.yml参数，主要是#Site部分。这些会显示在你的博客首页。
 
-```
-title: Blabla
-subtitle: ''
-description: ''
-keywords:
-author: blabla
-language: zh-CN #！
-timezone: 'Asia/Shanghai' #！
-```
+>title: Blabla
+>subtitle: ''
+>description: ''
+>keywords:
+>author: blabla
+>language: zh-CN #！
+>timezone: 'Asia/Shanghai' #！
 
 * 本地测试，这时应该显示默认主题landscape和/source/_posts下的hello-world.md。
 
@@ -105,14 +103,12 @@ ssh-keygen -t rsa
 
 * 设置_config.yml，更改url和deploy部分，使得hexo能部署到你的GitHub页面。
 
-```
-url: https://github.username.io
-
-deploy:
-	type: git
-	repo: https://github.com/username/username.github.io
-	branch: main
-```
+>url: https://github.username.io
+>
+>deploy:
+>	type: git
+>	repo: https://github.com/username/username.github.io
+>	branch: main
 
 * 安装部署工具，部署网页，这一步完成博客就算建好了，可以通过域名访问。
 

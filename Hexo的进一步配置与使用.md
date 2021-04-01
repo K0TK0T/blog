@@ -8,6 +8,7 @@ tags:
 categories:
 - blog
 ---
+
 ### 1、安装[NexT](https://github.com/theme-next/hexo-theme-next)主题与个人信息配置
 
 * 安装
@@ -27,75 +28,65 @@ vim themes/next/_config.yml
 
 1. favicon（也就是显示在你的浏览器标签页左边的小图标）
 
-```
-favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
-```
+>favicon:
+>  small: /images/favicon-16x16-next.png
+>  medium: /images/favicon-32x32-next.png
+>  apple_touch_icon: /images/apple-touch-icon-next.png
+>  safari_pinned_tab: /images/logo.svg
+>  #android_manifest: /images/manifest.json
+>  #ms_browserconfig: /images/browserconfig.xml
 
 <!--more-->
 
 2. scheme（next的主题样式，注意第三个Pisces可能部署不了，尽量不要选，前两个主题不是平铺，一言难尽...）
 
-```
-#scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-scheme: Gemini
-```
+>#scheme: Muse
+>#scheme: Mist
+>#scheme: Pisces
+>scheme: Gemini
 
 3. avatar（侧边栏头像）
 
-```
-avatar:
-  # Replace the default image and set the url here.
-  url: #/images/avatar.gif
-  # If true, the avatar will be dispalyed in circle.
-  rounded: false
-  # If true, the avatar will be rotated with the cursor.
-  rotated: false
-```
+>avatar:
+>  #Replace the default image and set the url here.
+>  url: #/images/avatar.gif
+>  #If true, the avatar will be dispalyed in circle.
+>  rounded: false
+>  #If true, the avatar will be rotated with the cursor.
+>  rotated: false
 
 4. social（社交链接，比如说github、csdn、简书、qq等等，后面的图标可以在[这里](https://fontawesome.com/icons)找，改||后的内容就好）
 
-```
-social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
-  #Google: https://plus.google.com/yourname || fab fa-google
-  #Twitter: https://twitter.com/yourname || fab fa-twitter
-  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
-  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
-  #YouTube: https://youtube.com/yourname || fab fa-youtube
-  #Instagram: https://instagram.com/yourname || fab fa-instagram
-  #Skype: skype:yourname?call|chat || fab fa-skype
-  CSDN: https://www.csdn.net/yourname || fab fa-cuttlefish
-```
+>social:
+>  #GitHub: https://github.com/yourname || fab fa-github
+>  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+>  #Weibo: https://weibo.com/yourname || fab fa-weibo
+>  #Google: https://plus.google.com/yourname || fab fa-google
+>  #Twitter: https://twitter.com/yourname || fab fa-twitter
+>  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+>  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+>  #YouTube: https://youtube.com/yourname || fab fa-youtube
+>  #Instagram: https://instagram.com/yourname || fab fa-instagram
+>  #Skype: skype:yourname?call|chat || fab fa-skype
+>  CSDN: https://www.csdn.net/yourname || fab fa-cuttlefish
 
 5. footer（尾注，显示你的版权信息等等，把powered设置为false可以不显示Powered by Hexo & NexT，也可以定制下面那个心型小图标）
 
-```
-footer:
-  # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
-  # Icon between year and copyright info.
-  icon:
-    # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
-    # If you want to animate the icon, set it to true.
-    animated: false
-    # Change the color of icon, using Hex Code.
-    color: "#ff0000"
-  # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
-  # Powered by Hexo & NexT
-  powered: true
-```
+>footer:
+>  #Specify the date when the site was setup. If not defined, current year will be used.
+>  #since: 2015
+>  #Icon between year and copyright info.
+>  icon:
+>    #Icon name in Font Awesome. See: https://fontawesome.com/icons
+>    name: fa fa-heart
+>    #If you want to animate the icon, set it to true.
+>    animated: false
+>    #Change the color of icon, using Hex Code.
+>    color: "#ff0000"
+>  #If not defined, `author` from Hexo `_config.yml` will be used.
+>  copyright:
+>  #Powered by Hexo & NexT
+>  powered: true
 
 
 
@@ -103,17 +94,15 @@ footer:
 
 * 修改themes/next/_config.yml，把需要的项目前面的注释取消，图标不满意依然可以在[这里](https://fontawesome.com/icons)找。
 
-```
-menu:
-  home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-gamepad
-  #schedule: /schedule/ || fa fa-calendar
-  #sitemap: /sitemap.xml || fa fa-sitemap
-  #commonweal: /404/ || fa fa-heartbeat
-```
+>menu:
+>  home: / || fa fa-home
+>  #about: /about/ || fa fa-user
+>  #tags: /tags/ || fa fa-tags
+>  #categories: /categories/ || fa fa-th
+>  archives: /archives/ || fa fa-gamepad
+>  #schedule: /schedule/ || fa fa-calendar
+>  #sitemap: /sitemap.xml || fa fa-sitemap
+>  #commonweal: /404/ || fa fa-heartbeat
 
 * 创建对应的文件夹和index.md，比如about，运行下面的命令可以自动创建这些。
 
@@ -123,10 +112,8 @@ hexo new page about
 
 * 特殊的tags和categories只要在front-matter部分加上这一行就会自动生成，不需要多加什么。
 
-```
-type: tags
-# type: categories
-```
+>type: tags
+>#type: categories
 
 
 
@@ -136,18 +123,16 @@ type: tags
 
 * leancloud浏览量统计
 
-```
-leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
-  # Required for apps from CN region
-  server_url: # <your server url>
-  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
-  # If you don't care about security in leancloud counter and just want to use it directly
-  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
-```
+>leancloud_visitors:
+>  enable: false
+>  app_id: #<your app id>
+>  app_key: #<your app key>
+>  #Required for apps from CN region
+>  server_url: # <your server url>
+>  #Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+>  #If you don't care about security in leancloud counter and just want to use it directly
+>  #(without hexo-leancloud-counter-security plugin), set `security` to `false`.
+>  security: true
 
 1. 将enable设置为true
 2. 将counter应用的appid和appkey填进去
@@ -158,26 +143,24 @@ leancloud_visitors:
 
 * Valine评论功能
 
-```
-# Valine
-# For more information: https://valine.js.org, https://github.com/xCss/Valine
-valine:
-  enable: false
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
-  notify: false # Mail notifier
-  verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
-  avatar: mm # Gravatar style
-  guest_info: nick,mail,link # Custom comment header
-  pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  recordIP: false # Whether to record the commenter IP
-  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-  #post_meta_order: 0
-```
+>#Valine
+>#For more information: https://valine.js.org, https://github.com/xCss/Valine
+>valine:
+>  enable: false
+>  appid: #Your leancloud application appid
+>  appkey: #Your leancloud application appkey
+>  notify: false #Mail notifier
+>  verify: false #Verification code
+>  placeholder: Just go go #Comment box placeholder
+>  avatar: mm #Gravatar style
+>  guest_info: nick,mail,link # Custom comment header
+>  pageSize: 10 # Pagination size
+>  language: #Language, available values: en, zh-cn
+>  visitor: false #Article reading statistic
+>  comment_count: true #If false, comment count will only be displayed in post page, not in home page
+>  recordIP: false #Whether to record the commenter IP
+>  serverURLs: #When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+>  #post_meta_order: 0
 
 1. 将enable设置为true
 2. 将应用quote的appid和appkey填进去
@@ -207,11 +190,9 @@ vim /blog/themes/next/layout/_macro/post.swig
 
 使用置顶功能的方法是在文章的front-matter部分加上
 
-```
-top: true
-# 或者数字，数字越大，优先级越高
-top: 5
-```
+>top: true
+>#或者数字，数字越大，优先级越高
+>top: 5
 
 
 
@@ -222,7 +203,7 @@ npm install hexo-generator-searchdb
 vim /themes/next/_config.yml
 ```
 
-把local_search的enable选项设置为true，[这里](https://github.com/theme-next/hexo-generator-searchdb)有它的进一步设置。
+将local_search的enable选项设置为true
 
 
 
@@ -234,9 +215,8 @@ vim /themes/next/_config.yml
 
 3. 一个投机取巧增加自定义侧边栏的方法，拿about举例：
 * 取消next/_config.yml这一行的注释，给fa fa-user换个图标
-```
-  #about: /about/ || fa fa-user
-```
+> #about: /about/ || fa fa-user
+
 * 将next/languages/zh-CN.yml里about的翻译改成你想要的
 * 新建blog/source/about/index.md，可以在里面写你想写的内容
 ```bash
