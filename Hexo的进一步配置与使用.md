@@ -38,6 +38,8 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 ```
 
+<!--more-->
+
 2. scheme（next的主题样式，注意第三个Pisces可能部署不了，尽量不要选，前两个主题不是平铺，一言难尽...）
 
 ```
@@ -47,7 +49,7 @@ favicon:
 scheme: Gemini
 ```
 
-4. avatar（侧边栏头像）
+3. avatar（侧边栏头像）
 
 ```
 avatar:
@@ -59,7 +61,7 @@ avatar:
   rotated: false
 ```
 
-5. social（社交链接，比如说github、csdn、简书、qq等等，后面的图标可以在[这里](https://fontawesome.com/icons)找，改||后的内容就好）
+4. social（社交链接，比如说github、csdn、简书、qq等等，后面的图标可以在[这里](https://fontawesome.com/icons)找，改||后的内容就好）
 
 ```
 social:
@@ -76,7 +78,7 @@ social:
   CSDN: https://www.csdn.net/yourname || fab fa-cuttlefish
 ```
 
-6. footer（尾注，显示你的版权信息等等，把powered设置为false可以不显示Powered by Hexo & NexT，也可以定制下面那个心型小图标）
+5. footer（尾注，显示你的版权信息等等，把powered设置为false可以不显示Powered by Hexo & NexT，也可以定制下面那个心型小图标）
 
 ```
 footer:
