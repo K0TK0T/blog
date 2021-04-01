@@ -1,9 +1,10 @@
 ---
 title: 在GitHub上使用Hexo搭建个人博客（2021.3，raspberry pi 4b）
 tags:
-    blog
-    github
-categories: blog
+- blog
+- github
+categories:
+- blog
 date: 2021-3-29 18:00:00
 top: false
 ---

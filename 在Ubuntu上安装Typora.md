@@ -1,9 +1,10 @@
 ---
 title: 在Ubuntu上安装Typora（2021.3，Ubuntu 16.04）
 tags:
-	ubuntu
-	typora
-categories: ubuntu
+- ubuntu
+- typora
+categories:
+- ubuntu
 date: 2021-3-31 18:00:00
 ---
 
