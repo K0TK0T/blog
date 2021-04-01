@@ -8,7 +8,6 @@ tags:
 categories:
 - blog
 ---
-
 ### 1、安装[NexT](https://github.com/theme-next/hexo-theme-next)主题与个人信息配置
 
 * 安装
@@ -223,7 +222,7 @@ npm install hexo-generator-searchdb
 vim /themes/next/_config.yml
 ```
 
-把local_search的enable选项设置为true
+把local_search的enable选项设置为true，[这里](https://github.com/theme-next/hexo-generator-searchdb)有它的进一步设置。
 
 
 
@@ -233,3 +232,13 @@ vim /themes/next/_config.yml
 
 2. themes/next/_config.yml的font标签可以设置博客各部分的字体。
 
+3. 一个投机取巧增加自定义侧边栏的方法，拿about举例：
+* 取消next/_config.yml这一行的注释，给fa fa-user换个图标
+```
+  #about: /about/ || fa fa-user
+```
+* 将next/languages/zh-CN.yml里about的翻译改成你想要的
+* 新建blog/source/about/index.md，可以在里面写你想写的内容
+```bash
+hexo new page about
+```
