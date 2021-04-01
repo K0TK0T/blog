@@ -1,6 +1,8 @@
 ---
 title: 在Ubuntu上安装Typora（2021.3，Ubuntu 16.04）
-tags: ubuntu, typora
+tags:
+	ubuntu
+	typora
 categories: ubuntu
 date: 2021-3-31 18:00:00
 ---
@@ -39,7 +41,7 @@ sudo apt update
 
 ### 2、通过官方提供的tar ball手动安装
 
-这个稍微能下动一点。
+这个稍微能下动一点，缺点是需要手动配置的地方多，比较麻烦。
 
 ```bash
 # 下载typora的tar ball，当然也可以直接在官网点download binary file下载
@@ -69,7 +71,7 @@ Type=Application
 
 ### 3、通过deb包安装
 
-当然这个是最简便也最省事的，记得第一个方法吗，它其实就是抓取仓库里的deb包到你的电脑上安装，这个url是https://typora.io/linux/linux/typora_0.9.98_amd64.deb （0.9.98版本）。可见Typora的安装其实给你绕了一个大圈，我也挺迷惑，直接托管在Github上不好吗。总之我想尽办法把它下载下来了（/doge），用dpkg安装就好。
+当然这个是最简便也最省事的，记得第一个方法吗，它其实就是抓取仓库里的deb包到你的电脑上安装，这个url是https://typora.io/linux/linux/typora_0.9.98_amd64.deb （0.9.98版本，这个链接在通过官方给的软件源安装的过程可以看到），可见Typora的安装其实给你绕了一个大圈。总之我想尽办法把它下载下来了，用dpkg安装就好。
 
 ```bash
 dpkg -i typora_0.9.98_amd64.deb

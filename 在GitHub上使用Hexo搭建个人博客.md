@@ -5,7 +5,7 @@ tags:
     github
 categories: blog
 date: 2021-3-29 18:00:00
-top: true
+top: false
 ---
 
 ### 1、Git，GitHub和Hexo
@@ -120,9 +120,19 @@ hexo generate
 hexo deploy
 ```
 
-* 官方文档中还给出了使用Travis CI部署的方式，大概是每次你将主分支提交修改的时候都会向travis也发送一份，travis在远程服务器完成你指定的一系列操作后再将形成好的静态网页发送到你的gh-pages分支下，将你的仓库设置为gh-pages分支就可以实现每次push之后部署，不过官方给的文档里就有很多错误比如master分支早就改为main了，从头到尾都没看到gh-pages等等，有兴趣的话可以自己研究试试。一方面travis登录要梯子，国内操作不方便，另一方面半懂不懂的做完以后可能会出现更大的问题，我就干脆不管，直接手动部署算了。
 
-### 5、安装主题，撰写博客
+
+>其实hexo的部署分为两种方法：
+>
+>一种是通过本地仓库部署，就是上面介绍的那种方法，hexo项目储存在本机，并且从本机发布。我是为了省事，把仓库作为github pages的分支设置为main，并且部署也是在main分支上部署。管理文件的方法是在_posts文件夹建立一个git仓库并push到github上，这样的好处是新安装插件之后不需要折腾travis ci的配置文件、同步的内容少、项目可以保持私密，当然坏处是如果发布博客的主机出了问题那所有的主题样式都泡汤了。
+>
+>另一种是公有仓库部署，在官方文档里有介绍。通过travis ci与github协作，github.username.io的main分支用于托管项目，gh-pages分支用于发布博客界面，travis ci则负责在你每次push的时候将main分支的项目生成静态网页发布到gh-pages分支。这样的好处是省事，不需要每次都手动重新编译博客再发布出去，但是坏处很多，一个是travis ci国内无法登录，需要梯子，另一个是官方关于这种方法的文档全部都过时了漏洞百出，比如分支处理，还有一个就是远程主机的环境配置很麻烦，比如置顶插件的安装。
+>
+>综上，我还是选择了本地部署。
+
+
+
+5、安装主题，撰写博客
 
 这一部分就比较轻松，Hexo的主题[在这](https://hexo.io/themes/)，大部分的主题在他们的代码仓库里找就能找到，方法就是把域名（username.github.io）里的username放到github.com/username里直接访问就好，基本上都有安装说明。大致步骤`git clone xxx.git ~/blog/themes/xxx`，`npm install`，再在_config.yml设置主题`theme: xxx`。
 
@@ -160,6 +170,8 @@ git init
 git status
 git add .
 git commit -m ""
+git config --global user.name "Your Name"
+git config --global user.email “email@example.com”
 git remote add origin "xxx.git"
 git pull
 git push
