@@ -3,6 +3,7 @@ title: 在GitHub上使用Hexo搭建个人博客（2021.3，raspberry pi 4b）
 tags:
 - blog
 - github
+- hexo
 categories:
 - blog
 date: 2021-3-29 18:00:00
@@ -137,7 +138,7 @@ hexo deploy
 
 这一部分就比较轻松，Hexo的主题[在这](https://hexo.io/themes/)，大部分的主题在他们的代码仓库里找就能找到，方法就是把域名（username.github.io）里的username放到github.com/username里直接访问就好，基本上都有安装说明。大致步骤`git clone xxx.git ~/blog/themes/xxx`，`npm install`，再在_config.yml设置主题`theme: xxx`。
 
-写博客和前面说的一样，写好markdown放在blog/source/_post下，或者运行`hexo new "new-file-name"`也行（想要删除帖子直接把md文件删除就好），全部整理好之后`hexo generate & hexo deploy`，过半分钟再去看就更新了。
+写博客和前面说的一样，写好markdown放在blog/source/_post下，或者运行`hexo new "new-file-name"`也行（想要删除帖子直接把md文件删除就好），全部整理好之后`hexo generate & hexo deploy`，过半分钟再去看就更新了。最要注意的地方是[front-matter](https://hexo.io/zh-cn/docs/front-matter)。
 
 ### 6、常用命令合集
 整理了一些写博客时常用的命令。
