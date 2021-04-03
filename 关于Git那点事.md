@@ -7,7 +7,7 @@ categories:
 - git
 ---
 
-1. 初始化Git仓库
+### 1、初始化Git仓库
 
 ```bash
 cd gitrepo
@@ -18,14 +18,14 @@ git commit -m "first commit"
 git branch -M main
 ```
 
-2. 链接到远程库
+### 2、链接到远程库
 
 ```bash
 git remote add origin <url>
 git push -u origin main
 ```
 
-3. 分支操作
+### 3、分支操作
 
 ```bash
 git branch  # 查看本地分支
@@ -41,7 +41,7 @@ git merge [branch_name]  # 合并分支
 git push -u origin [branch_name]  # 提交分支，再次提交就不需要后面的参数了，-u就是--set-upstream，设置提交流
 ```
 
-4. 解决远程冲突
+### 4、解决远程冲突
 
 ```bash
 git fetch origin [branch_name]:[dev]  # 将远程分支拉到本地的另一条分支上
