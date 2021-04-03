@@ -215,10 +215,14 @@ vim /themes/next/_config.yml
 
 3. 一个投机取巧增加自定义侧边栏的方法，拿about举例：
 * 取消next/_config.yml这一行的注释，给fa fa-user换个图标
+
+
 > #about: /about/ || fa fa-user
 
 * 将next/languages/zh-CN.yml里about的翻译改成你想要的
 * 新建blog/source/about/index.md，可以在里面写你想写的内容
+
+
 ```bash
 hexo new page about
 ```
