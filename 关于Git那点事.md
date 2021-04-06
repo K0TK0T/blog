@@ -24,7 +24,9 @@ git branch -M main  # 给分支改名为main
 ### 2、链接到远程库
 
 ```bash
-ssh-keygen -t rsa  # 生成ssh公钥和私钥，将公钥存放到github公钥中
+# 生成ssh公钥和私钥，将公钥存放到github公钥中
+sudo apt install ssh
+ssh-keygen -t rsa
 git remote add origin <url>  # 添加远程仓库
 git push -u origin main  # 推送分支
 ```
